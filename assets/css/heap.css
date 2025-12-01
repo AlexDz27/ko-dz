@@ -2,3 +2,10 @@
   background-color: black;
   color: white;
 }
+
+.prev-ha {
+  padding-left: 2rem;
+}
+.prev-ha__title {
+  color: gray;
+}
