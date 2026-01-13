@@ -9,3 +9,7 @@
 .prev-ha__title {
   color: gray;
 }
+
+.small, .sm, .s {
+  font-size: .7em;
+}
