@@ -13,3 +13,8 @@
 .small, .sm, .s {
   font-size: .7em;
 }
+
+.hint-spoiler {
+  padding: 2rem;
+  background-color: rgb(219, 219, 219);
+}
