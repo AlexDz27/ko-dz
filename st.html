@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/gh/inklife/pixelvoyager/pixelvoyager.js"></script>
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="assets/js/main.js" defer></script>
   <title>Document</title>
@@ -11,38 +12,58 @@
 
 <main class="main cont">
   <header class="header">
-    <h1>Старшая группа</h1>
+    <h1>Старшая группа (код: ЛО-3)</h1>
   </header>
 
   <p><b>Программное обеспечение</b>: <a href="https://rainlab.by/ko/s/construct-2/" target="_blank">Construct 2</a> (зайти, скачать файл <b>kopiya-construct2-r276-setup_2.exe</b> и установить)</p>
-  <p><b>Цель</b>: <span style="text-decoration: underline;">создать демонстрационный уровень</span>.</p>
+  <p><b>Цель</b>: <span style="text-decoration: underline;">создать поведение для краба</span>.</p>
   <video controls style="max-width: 100%;">
-    <source src="assets/vids/lo-2/sonic-1.mp4" type="video/mp4">
+    <source src="assets/vids/lo-3.mp4" type="video/mp4">
     Ошибка браузера.
   </video>
   <p>
     <b>Задачи</b>:
     <ol>
       <li>
-        Добавить персонажа Sonic <a href="#1"><small class="s" style="font-size: .8em;">[смотри примечание 1]</small></a>
-        и добавить ему необходимое поведение
+        В текущем демонстрационном уровне с прошлого д/з либо просто в новом уровне (можно просто накидать от руки землю и Игрока)
+        добавить персонажа Краба <a href="#1"><small class="s" style="font-size: .8em;">[смотри примечание 1]</small></a>
+        и добавить ему поведение <span style="text-decoration: underline;">следования за игроком</span>
       </li>
-      <li>
-        Добавить землю <a href="#1"><small class="s" style="font-size: .8em;">[смотри примечание 1]</small></a>
-        и добавить ей необходимое поведение
-      </li>
-      <li>Добавить анимации для Соника <small class="s" style="font-size: .9em;">(нажимаем "Edit animations" справа снизу – потом не забываем, что внизу есть малозаметная панель "Animation frames". Потом заходим во вкладу "Event sheet 1" и там добавляем события, и на эти события навешиваем экшены (действия))</small></li>
     </ol>
   </p>
+  <p>
+    Чтобы выполнить задачу, вспомним: в Construct 2, помимо Эвентов (Событий, которые можно добавлять в Event Sheet с помощью кнопки "Add event") есть также
+    <b>Sub-events (Подсобытия)</b> – это такие же проверки, случились ли определённые события в игре, как и обычные События, но они проверяются 
+    <span style="text-decoration: underline;">после</span> того, как <span style="text-decoration: underline;">прошла</span>
+    проверка на основное Событие.<br>
+    Чтобы создать Подсобытия, надо:
+  </p>
+  <ol>
+    <li>
+      На строке с событием внутри отступа слева нажать правой кнопкой мыши:<br>
+      <a class="pixel-voyager-link" href="assets/img/lo-3/sub-event-1.png"><img src="assets/img/lo-3/sub-event-1.png"></a>
+    </li>
+    <li>
+      Выбрать "Add sub-event":<br>
+      <a class="pixel-voyager-link" href="assets/img/lo-3/sub-event-2.png"><img src="assets/img/lo-3/sub-event-2.png" style="width: 335px; height: 150px;"></a>
+    </li>
+  </ol>
+  <p>
+    Далее, нужно вспомнить о новом Поведении - Line of Sight (Поле Зрения). Добавь его в панели "Objects" (обычно находится справа внизу – 
+    если ты не видишь эту панель, можно её показать нажав сверху на пункт меню View -> Object Bar (поставить галочку)):<br>
+    <a class="pixel-voyager-link" href="assets/img/lo-3/be-1.png"><img src="assets/img/lo-3/be-1.png" style="width: 335px; margin-bottom: 30px;"></a><br>
+    <a class="pixel-voyager-link" href="assets/img/lo-3/be-2.png"><img src="assets/img/lo-3/be-2.png" style="width: 335px;"></a>
+  </p>
+  <p>И далее надо подключиться к событию у Краба <b>"Has LineOfSight to <название-спрайта-Соника>"</b> (В Поле Зрения находится Соник).</p>
   <p id="1">
     <b>Примечание 1:</b><br>
-    Скачать эти картинки надо по адресу – <a href="https://rainlab.by/ko/s/construct-2/" target="_blank">https://rainlab.by/ko/s/construct-2/</a>
+    Скачать картинку Краба надо по адресу – <a href="https://rainlab.by/ko/s/construct-2/" target="_blank">https://rainlab.by/ko/s/construct-2/</a>
   </p>
   <p>
     <b>Подсказки</b>:
     <details>
       <summary>Нажми сюда, чтобы увидеть спойлер-подсказку с необходимыми событиями и экшенами</summary>
-      <img src="assets/img/lo-2/1.png">
+      <a class="pixel-voyager-link" href="assets/img/lo-3/res.png"><img src="assets/img/lo-3/res.png"></a><br>
     </details>
   </p>
 
@@ -50,6 +71,43 @@
   <br>
   <hr>
   <br>
+
+  <details>
+    <summary class="prev-ha__title">Прошлое д/з (код: ЛО-2)</summary>
+    <section class="prev-ha">
+      <p><b>Программное обеспечение</b>: <a href="https://rainlab.by/ko/s/construct-2/" target="_blank">Construct 2</a> (зайти, скачать файл <b>kopiya-construct2-r276-setup_2.exe</b> и установить)</p>
+      <p><b>Цель</b>: <span style="text-decoration: underline;">создать демонстрационный уровень</span>.</p>
+      <video controls style="max-width: 100%;">
+        <source src="assets/vids/lo-2/sonic-1.mp4" type="video/mp4">
+        Ошибка браузера.
+      </video>
+      <p>
+        <b>Задачи</b>:
+        <ol>
+          <li>
+            Добавить персонажа Sonic <a href="#1"><small class="s" style="font-size: .8em;">[смотри примечание 1]</small></a>
+            и добавить ему необходимое поведение
+          </li>
+          <li>
+            Добавить землю <a href="#1"><small class="s" style="font-size: .8em;">[смотри примечание 1]</small></a>
+            и добавить ей необходимое поведение
+          </li>
+          <li>Добавить анимации для Соника <small class="s" style="font-size: .9em;">(нажимаем "Edit animations" справа снизу – потом не забываем, что внизу есть малозаметная панель "Animation frames". Потом заходим во вкладу "Event sheet 1" и там добавляем события, и на эти события навешиваем экшены (действия))</small></li>
+        </ol>
+      </p>
+      <p id="1">
+        <b>Примечание 1:</b><br>
+        Скачать эти картинки надо по адресу – <a href="https://rainlab.by/ko/s/construct-2/" target="_blank">https://rainlab.by/ko/s/construct-2/</a>
+      </p>
+      <p>
+        <b>Подсказки</b>:
+        <details>
+          <summary>Нажми сюда, чтобы увидеть спойлер-подсказку с необходимыми событиями и экшенами</summary>
+          <img src="assets/img/lo-2/1.png">
+        </details>
+      </p>
+    </section>
+  </details>
 
   <details>
     <summary class="prev-ha__title">Прошлое д/з (код: ЛО-1)</summary>
