@@ -28,32 +28,29 @@
       <b>Запрограммируй игру согласно видео. Подсказки</b>:
       <ul>
         <li>
+          Чтобы найти картинку для Коня, начни вводить на английском слово <b>"Horse"</b>.
+        </li>
+        <li>
           Финиш можешь нарисовать сам либо скачать <a href="assets/d-assets" target="_blank">отсюда</a>. Также для красоты рекомендую
           в объекте Финиш единожды достать и нажать блок из секции "Внешний вид" – "перейти на <b>[задний]</b> слой".
         </li>
         <li style="padding-bottom: 30px; padding-top: 1rem;">
-          Код (блоки) Мульфильма:<br>
-          <a class="pixel-voyager-link" href="assets/img/if-7_1.png"><img src="assets/img/if-7_1.png" style="width: 245px;"></a>
-        </li>
-        <li>
-          Вместо блоков цикла и движения шагами можно использовать блок "Плыть", например, так:<br>
-          <a class="pixel-voyager-link" href="assets/img/if-7_2.png"><img src="assets/img/if-7_2.png" style="width: 245px;"></a><br>
-          <span style="text-decoration: underline;">Обрати внимание, что в этом блоке можно указывать, к какому объекту плыть, а также плыть в случайном направлении</span>
+          Тебе понадобится понятие скорости для каждого коня. Это можно сделать с помощью создания переменной в секции "Переменные".
+          Также при создании нужно выбрать <span style="text-decoration: underline;">"Только для этого спрайта"</span>.<br>
+          <b style="color: red; font-size: 1.3em;">Если возникают проблемы</b> с переменной "скорость" у другого коня, попробуй у проблемного коня удалить эту переменную и создать заново.<br>
+          Также обращай внимание, чтобы у каждого коня была своя отдельная скорость, а не общая – нам <span style="text-decoration: underline;">нужен элемент случайности</span> в игре.
         </li>
         <li style="padding-bottom: 30px; padding-top: 1rem;">
-          <span style="text-decoration: underline;">Если Рыбки возвращаются к Дайверу – <b>ничего страшного</b></span> – это нормальное поведение программы.
+          Чтобы сделать скорость <b style="text-decoration: underline;">случайной</b>, используй блок из секции "Операторы" – <b>"выдать случайное от [] до []"</b>.
+        </li>
+        <li>
+          Чтобы проигравший конь останавливался, можно использовать вот такой скрипт:<br>
+          <a class="pixel-voyager-link" href="assets/img/if-8/1.png"><img src="assets/img/if-8/1.png" style="width: 245px;"></a><br>
         </li>
       </ul>
     </p>
-    <div class="hint-spoiler" style="margin-top: 3.5rem;">
-      <b>Подсказка-спойлер</b>:<br><br>
-      <details>
-        <summary>Нажми сюда, чтобы увидеть подсказку-спойлер с полным скриптом Дайвера <span style="font-weight: bold;">(жми сюда только если прям совсем не получается)</span>:</summary>
-        <a class="pixel-voyager-link" href="assets/img/if-7_3.png"><img src="assets/img/if-7_3.png" style="width: 245px;"></a>
-      </details>
-    </div>
     <p>
-      <span style="text-decoration: underline;">Доказательство выполненного д/з</span>: скриншот программы (скрипта) Дайвера и какой-нибудь Рыбки
+      <span style="text-decoration: underline;">Доказательство выполненного д/з</span>: скриншот программы (скрипта) Коня.
     </p>
     
     <br>
