@@ -1,3 +1,20 @@
+.list {}
+.list__mb-1 {
+  margin-bottom: 1rem;
+}
+
+.prev-ha {
+  padding-left: 2rem;
+}
+.prev-ha__title {
+  color: gray;
+}
+
+.hint-spoiler {
+  padding: 2rem;
+  background-color: rgb(219, 219, 219);
+}
+
 .btn {
   background-color: transparent;
   border: none;
