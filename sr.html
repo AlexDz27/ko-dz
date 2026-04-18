@@ -12,44 +12,95 @@
   
   <main class="main cont">
     <header class="header">
-      <h1>Средняя группа (код: СР-6)</h1>
+      <h1>Средняя группа (код: СР-7)</h1>
     </header>
     
-    <p><b>Программное обеспечение</b>: <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a> или другая LLM нейросеть</p>
+    <p><b>Программное обеспечение</b>: <a href="https://rainlab.by/ko/s/construct-2/kopiya-construct2-r276-setup_2.exe" download>Construct 2</a> (нажми на ссылку, чтобы скачать -- потом установи)</p>
+    <p><b>Цель</b>: <span class="u">сделать демо игрового уровня</span>.</p>
+
+    <div style="display: grid; grid-template-columns: 35% 65%; column-gap: 1rem;">
+      <a class="pixel-voyager-link" href="assets/img/sr-7/0.png" style="max-width: fit-content;">
+        <img src="assets/img/sr-7/0.png">
+      </a>
+      <video controls style="max-width: 100%;" muted>
+        <source src="assets/vids/sr-7.mp4" type="video/mp4">
+        Ошибка браузера.
+      </video>
+    </div>
     <p>
-      <b>Цель</b>: <span class="u">спросить у нейросети об особенностях запчастей ПК</span>.
-    </p>
-    <a class="pixel-voyager-link" href="assets/img/sr-6/1.png">
-      <img src="assets/img/sr-6/1.png" style="max-width: 25rem;">
-    </a>
-    <br><br>
-    <p>
-      <b>Учебная цель</b>: вспомнить, как работать с <b>нейросетями</b> для поиска информации.
+      <b>Учебная цель</b>: вспомнить, как создавать объекты и встраивать в них поведения (<b>Behaviors</b>).
     </p>
     <p style="margin-bottom: 0;"><b>Задачи:</b></p>
     <ul style="margin-top: .2rem; margin-bottom: 2.2rem;">
       <li>
-        Зайди в нейросеть и напиши такой же промпт, как на картинке сверху. Вот его текст:
-        <blockquote class="bq-ds-1" style="margin-top: .5rem">
-          Персональный компьютер.<br><br>
-
-          Расскажи самые важные особенности о запчастях ПК. В ответе учти мою идентичность - я школьник 11 лет.<br><br>
-
-          Также кратко расскажи про технику безопасности со статическим электричеством.
-        </blockquote>
+        <b>Сделай уровень</b> похожий, как на картинке сверху: ПКМ на холст -> Insert new object -> рисуем, например, с помощью кисточки -> закрываем на крестик справа сверху.
       </li>
       <li>
-        Задай ещё вопрос по тому, что тебя интересует
+        <b>Встрой поведения (Behaviors)</b>, чтобы Человечек ходил и прыгал, а Земля была твёрдой:<br>
+        <div style="text-align: center;">
+          <img src="assets/img/sr-7/1-1.png" style="max-width: 55rem;">
+        </div>
+      </li>
+      <li>
+        <b>Создай связку событие -- действие (экшн)</b> во вкладке Event sheet 1:<br>
+        <div style="text-align: center;">
+          <img src="assets/img/sr-7/2.png" style="max-width: 55rem;">
+        </div>
+      </li>
+    </ul>
+    <p>Подсказки:</p>
+    <ul style="margin-top: 0; margin-bottom: 2rem;">
+      <li class="list__mb-1">
+        В событиях сперва выбирай штуку, которую собираешь:<br>
+        <a class="pixel-voyager-link" href="assets/img/sr-7/3.png">
+          <img src="assets/img/sr-7/3.png" style="max-width: 25rem;">
+        </a>
       </li>
     </ul>
     <p>
-      <span class="u">Доказательство выполненного д/з</span>: скриншоты общения с нейросетью и/или устное объяснение, что понял.<br>
+      <span class="u">Доказательство выполненного д/з</span>: видео игры / скриншот листа событий / устное объяснение, как сделал.<br>
     </p>
     
     <br>
     <br>
     <hr>
     <br>
+
+    <details>
+      <summary class="prev-ha__title">Прошлое д/з (код: СР-6)</summary>
+      <section class="prev-ha">
+        <p><b>Программное обеспечение</b>: <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a> или другая LLM нейросеть</p>
+        <p>
+          <b>Цель</b>: <span class="u">спросить у нейросети об особенностях запчастей ПК</span>.
+        </p>
+        <a class="pixel-voyager-link" href="assets/img/sr-6/1.png">
+          <img src="assets/img/sr-6/1.png" style="max-width: 25rem;">
+        </a>
+        <br><br>
+        <p>
+          <b>Учебная цель</b>: вспомнить, как работать с <b>нейросетями</b> для поиска информации.
+        </p>
+        <p style="margin-bottom: 0;"><b>Задачи:</b></p>
+        <ul style="margin-top: .2rem; margin-bottom: 2.2rem;">
+          <li>
+            Зайди в нейросеть и напиши такой же промпт, как на картинке сверху. Вот его текст:
+            <blockquote class="bq-ds-1" style="margin-top: .5rem">
+              Персональный компьютер.<br><br>
+
+              Расскажи самые важные особенности о запчастях ПК. В ответе учти мою идентичность - я школьник 11 лет.<br><br>
+
+              Также кратко расскажи про технику безопасности со статическим электричеством.
+            </blockquote>
+          </li>
+          <li>
+            Задай ещё вопрос по тому, что тебя интересует
+          </li>
+        </ul>
+        <p>
+          <span class="u">Доказательство выполненного д/з</span>: скриншоты общения с нейросетью и/или устное объяснение, что понял.<br>
+        </p>
+      </section>
+    </details>
 
     <details>
       <summary class="prev-ha__title">Прошлое д/з (код: СР-5)</summary>
